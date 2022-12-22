@@ -3,14 +3,34 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import {HttpClientModule} from '@angular/common/http';
+import { EmployeeCreateComponent } from './employee-create/employee-create.component'
+import { FormsModule } from '@angular/forms';
+import { EmployeeUpdateComponent } from './employee-update/employee-update.component';
+import { EmployeeDeleteComponent } from './employee-delete/employee-delete.component';
+import { DepartmentListComponent } from './department-list/department-list.component';
+import { DepartmentCreateComponent } from './department-create/department-create.component';
+import { DepartmentUpdateComponent } from './department-update/department-update.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmployeeListComponent,
+    EmployeeCreateComponent,
+    EmployeeUpdateComponent,
+    EmployeeDeleteComponent,
+    DepartmentListComponent,
+    DepartmentCreateComponent,
+    DepartmentUpdateComponent,
+
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

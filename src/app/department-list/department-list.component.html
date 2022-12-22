@@ -1,0 +1,47 @@
+<h2>Employee List</h2>
+<table class = "table" style="background-color:lavender" >
+    <thead>
+        <tr>
+            <th> Department ID</th>
+            <th> Department Name</th>
+            <th> Manager ID</th>
+            <th> Update </th>
+            <th> Delete </th>
+
+
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let department of departments">
+        <td> {{department.departmentID}}</td>
+        <td>{{department.departmentName}}</td>
+        <td>{{department.managerID}}</td>
+
+        <td> 
+            <button (click) = "departmentUpdate(department.departmentID)" class = "btn"style="background-color: #008CBA"> Update</button>
+
+        </td>
+        <td>
+            <button (click) = "departmentDelete(department.departmentID)" class = "btn" style="background-color: #555555; color:white;">Delete</button>
+
+        </td>
+
+        
+            
+
+
+
+
+
+
+
+        
+        
+        </tr>
+    </tbody>
+
+
+
+
+</table>

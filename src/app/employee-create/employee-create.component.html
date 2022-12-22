@@ -1,0 +1,56 @@
+<h3>Create Employee</h3>
+<form (ngSubmit) = "onSubmit()">
+<div class = "form-group">
+        <label>First Name</label>
+        <input type = "text" class = "form-control" id="firstName"
+        [(ngModel)] = "employee.firstName" name ="firstName">
+   
+    </div>
+    <div class = "form-group">
+        <label>Last Name</label>
+        <input type = "text" class = "form-control" id="lastName"
+        [(ngModel)] = "employee.lastName" name ="lastName">
+   
+    </div>
+    <div class = "form-group">
+        <label>Email</label>
+        <input type = "text" class = "form-control" id="email"
+        [(ngModel)] = "employee.email" name ="email">
+    </div>
+
+    <div class = "form-group">
+        <label>First Name</label>
+        <input type = "text" class = "form-control" id="phoneNumber"
+        [(ngModel)] = "employee.phoneNumber" name ="phoneNumber">
+    </div>
+
+    <div class = "form-group">
+        <label>Hire Date</label>
+        <input type = "text" class = "form-control" id="hireDate"
+        [(ngModel)] = "employee.hireDate" name ="hireDate">
+    </div>
+
+    <div class = "form-group">
+        <label> Salary </label>
+        <input type = "text" class = "form-control" id="salary"
+        [(ngModel)] = "employee.salary" name ="salary">
+   
+    </div>
+
+    
+    <div class = "form-group">
+        <label> Manager ID</label>
+        <input type = "text" class = "form-control" id="managerId"
+        [(ngModel)] = "employee.managerId" name ="managerId">
+   
+    </div>
+    
+    <div class = "form-group">
+        <label>Department ID</label>
+        <input type = "text" class = "form-control" id="departmentId"
+        [(ngModel)] = "employee.departmentID" name ="departmentId">
+   
+    </div>
+
+<button class = "btn" type = "submit" style="background-color: #4CAF50;">Create</button>
+</form>
